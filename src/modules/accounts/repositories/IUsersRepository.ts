@@ -1,5 +1,5 @@
 import { ICreateUserDto } from "../dtos/ICreateUserDto";
-import { User } from "../entities/User";
+import { User } from "../infra/typeorm/entities/User";
 
 interface IUsersRepository {
   create(data: ICreateUserDto): Promise<void>;
